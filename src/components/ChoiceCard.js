@@ -1,4 +1,5 @@
-import React from 'react'
+/*import React from 'react'
+
 
 export default function ChoiceCard(props) {
     console.log("Props:", props);
@@ -9,4 +10,19 @@ export default function ChoiceCard(props) {
             <h3>{props.winner ? "Won" : "Loss"}</h3>
         </div>
     )
+}*/
+
+import React, { Component } from 'react'
+
+export default class ChoiceCard extends Component {
+    render() {
+        return (
+            <div className={`choice-card ${this.props.winner ? "winner" : "loser"}`}>
+                <h1>{this.props.name}</h1>
+                <img src={this.props.imgURL}/>
+                <h3>{this.props.winner ? "Won" : "Loss"}</h3>
+            </div>
+        )
+    }
 }
+
