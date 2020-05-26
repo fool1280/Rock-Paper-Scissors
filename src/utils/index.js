@@ -1,4 +1,4 @@
-const CHOICES = {
+export const CHOICES = {
     scissors: {
       name: "scissors",
       url: "http://www.pngmart.com/files/1/Scissors-PNG-Pic.png",
