@@ -1,17 +1,16 @@
-/*import React from 'react'
-
+import React from 'react'
 
 export default function ChoiceCard(props) {
-    console.log("Props:", props);
     return (
-        <div className={`choice-card ${props.winner ? "winner" : "loser"}`}>
+        <div className={`choice-card ${props.result}`}>
             <h1>{props.title}</h1>
-            <img src={props.imgURL} alt={props.title}/>
-            <h3>{props.winner ? "Won" : "Loss"}</h3>
+            <img src={props.choice.url} alt={props.choice.name}/>
+            <h3>{props.result}</h3>
         </div>
     )
-}*/
+}
 
+/*
 import React, { Component } from 'react'
 
 export default class ChoiceCard extends Component {
@@ -19,10 +18,10 @@ export default class ChoiceCard extends Component {
         return (
             <div className={`choice-card ${this.props.winner ? "winner" : "loser"}`}>
                 <h1>{this.props.name}</h1>
-                <img src={this.props.imgURL}/>
+                <img src={this.props.imgURL} alt={this.props.title}/>
                 <h3>{this.props.winner ? "Won" : "Loss"}</h3>
             </div>
         )
     }
-}
+}*/
 
